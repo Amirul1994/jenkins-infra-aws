@@ -6,7 +6,7 @@ chmod 400 jenkins_k3s.id_rsa
 
 on k3s-master, copy the content of /etc/rancher/k3s/k3s.yaml
 
-paste it on /var/lib/jenkins/.kube/config; edit the server with k3s-master's private ip address
+paste it on /var/lib/jenkins/.kube/config; edit the line starts with server with k3s-master's private ip address
 
 sudo chown -R jenkins:jenkins /var/lib/jenkins
 
